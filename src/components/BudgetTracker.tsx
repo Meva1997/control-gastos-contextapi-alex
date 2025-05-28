@@ -18,12 +18,11 @@ export default function BudgetTracker() {
   return (
 
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         <div className="flex justify-center">
           <CircularProgressbar 
             value={percentage} // Remaining budget
             text={`${percentage}% Gastado`} // Text inside the circle
-            maxValue={state.budget} // Maximum value for the progress bar
             styles={buildStyles({
               pathColor: colorPercentage(), // Color of the progress bar
               textColor: '#3b82f6', // Color of the text inside the circle
@@ -35,8 +34,8 @@ export default function BudgetTracker() {
           />
         </div>
         
-        <div className="flex flex-col justify-center items-center gap-8">
-          <button type="button" className="bg-pink-600 text-white w-full p-2 uppercase font-bold rounded-lg cursor-pointer" onClick={() => dispatch({type: 'reset-app'})}> Resetear App </button>
+        <div className="flex flex-col items-center justify-center gap-8">
+          <button type="button" className="w-full p-2 font-bold text-white uppercase bg-pink-600 rounded-lg cursor-pointer" onClick={() => dispatch({type: 'reset-app'})}> Resetear App </button>
 
           <AmountDisplay 
             label='Presupuesto'
