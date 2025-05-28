@@ -55,17 +55,17 @@ export default function ExpenseDetail({expense} : ExpenseDetailprops) {
           trailingActions={trailingActions()} //arrastrar el elemento de derecha a izquierda
         >
 
-          <div className="bg-white shadow-lg p-5 w-full border-b border-gray-200 flex gap-5 items-center">
+          <div className="flex items-center w-full gap-5 p-5 bg-white border-b border-gray-200 shadow-lg">
 
             <div>
-              <img src={`/icono_${categoryinfo.icon}.svg`} alt="icono gasto" className="w-20"/>
+              <img src={`${import.meta.env.BASE_URL}icono_${categoryinfo.icon}.svg`} alt="icono gasto" className="w-20"/>
             </div>
 
             <div className="flex-1 space-y-2">
               <p className="text-sm font-bold uppercase text-slate-500">{categoryinfo.name}</p>
               
               <p>{expense.expenseName}</p>
-              <p className="text-slate-600 text-sm">{formatDate(expense.date!.toString())}</p> 
+              <p className="text-sm text-slate-600">{formatDate(expense.date!.toString())}</p> 
             </div>
 
             <AmountDisplay 
