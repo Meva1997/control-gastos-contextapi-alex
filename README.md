@@ -1,54 +1,61 @@
-# React + TypeScript + Vite
+# 💸 Budgeting App – React + Context API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Budgeting App**! This project demonstrates my expertise in modern React development and efficient state management using the Context API. Designed with clarity and user experience in mind, it’s a showcase of clean code, thoughtful architecture, and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📝 **Add, Edit, and Delete Expenses:** Manage your budget in real-time.
+- 📊 **Live Budget Overview:** Instantly see your available budget and spending breakdown.
+- ⚡ **Seamless React Context API State Management:** No prop drilling—efficient and scalable.
+- 📱 **Responsive UI:** Looks great on any device.
+- 🗂️ **Well-Organized Components:** Easy to read, extend, and maintain.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Meva1997/control-gastos-contextapi-alex.git
+    cd control-gastos-contextapi-alex
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+3. **Start the development server:**
+    ```bash
+    npm start
+    ```
+
+---
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/)
+- [Context API](https://react.dev/reference/react/useContext)
+- TypeScript 
+- CSS 
+
+---
+
+## 🎯 Purpose
+
+This is a portfolio project intended to highlight my skills with React, state management, and front-end architecture. There is no public demo—please explore the codebase!
+
+---
+
+## 🙋‍♂️ About Me
+
+I’m passionate about building intuitive, scalable web apps. This project is part of my journey to master modern front-end technologies.  
+Feel free to browse, review, or reach out!
+
+---
+
+## 📄 License
+
+For educational and showcase purposes only.
